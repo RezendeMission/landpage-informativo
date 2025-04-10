@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informativo Asiático</title>
+  <style>
+    :root {
+      --vermelho-asiatico: #D72638;
+      --roxo-asiatico: #3F0D12;
+      --dourado: #FFB400;
+      --gradiente-bg: linear-gradient(135deg, #3F0D12, #D72638);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--gradiente-bg);
+      color: white;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid var(--dourado);
+      margin-bottom: 25px;
+      box-shadow: 0 0 20px var(--dourado);
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1, h2 {
+      color: var(--dourado);
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #f0f0f0;
+      margin-bottom: 30px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform 0.3s ease, opacity 0.3s;
+      opacity: 0.8;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    .section {
+      margin: 60px 0;
+    }
+
+    .mapa {
+      background: url('mapa-mundi.jpg') center/cover no-repeat;
+      border-radius: 12px;
+      padding: 60px 20px;
+      color: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .testemunhos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .testemunho-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--dourado);
+      border-radius: 10px;
+      padding: 15px;
+      text-align: left;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .testemunho-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .alvos {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 12px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    ul {
+      list-style: square inside;
+      color: #fff;
+      font-size: 17px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="sua-foto.jpg" alt="Foto de Perfil" class="profile-pic">
+    <h1>Bem-vindo ao Informativo</h1>
+    <p>Informação, testemunho e intercessão — tudo em um só lugar, com visual inspirado na Ásia.</p>
+
+    <div class="social-links">
+      <a href="#"><img src="instagram-icon.png" width="30"></a>
+      <a href="#"><img src="facebook-icon.png" width="30"></a>
+      <a href="#"><img src="youtube-icon.png" width="30"></a>
+    </div>
+
+    <div class="section mapa">
+      <h2>Ore pelos povos não alcançados</h2>
+      <p>Levante um clamor por aqueles que ainda não ouviram o nome de Jesus. Use este mapa como guia de intercessão global.</p>
+    </div>
+
+    <div class="section">
+      <h2>Testemunhos do Mês</h2>
+      <div class="testemunhos">
+        <div class="testemunho-card">
+          <img src="foto1.jpg" alt="Testemunho 1">
+          <p>Este mês vimos milagres acontecendo no campo. Curas, libertações e reconciliações marcaram nosso tempo em comunidade.</p>
+        </div>
+        <div class="testemunho-card">
+          <img src="foto2.jpg" alt="Testemunho 2">
+          <p>Durante uma visita missionária, fomos surpreendidos por uma família inteira se entregando a Jesus. Glória a Deus!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section alvos">
+      <h2>Alvos de Oração</h2>
+      <ul>
+        <li>Por estratégias criativas de evangelismo transcultural</li>
+        <li>Pela unidade entre as equipes de campo</li>
+        <li>Provisão financeira e emocional para missionários</li>
+        <li>Traduções da Bíblia em idiomas locais</li>
+        <li>Por portas abertas em nações restritas</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
